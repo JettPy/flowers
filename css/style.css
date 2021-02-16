@@ -20,7 +20,7 @@
 }
 
 *,
-*::after,
+*:after,
 *:before {
   box-sizing: border-box;
 }
@@ -47,12 +47,19 @@ body {
   font-family: "Gotham Pro Medium";
 }
 
+.header-contacts {
+  text-align: right;
+}
+
 .header-phone {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
-  text-align: right;
   font-weight: 500;
+  display: block;
+}
+
+.header-description {
   display: block;
 }
 
@@ -61,12 +68,10 @@ body {
   font-weight: 400;
   margin-top: 7px;
   display: block;
-  text-align: right;
 }
 
 .callback {
   color: #ff3469;
-  text-align: right;
   display: block;
   margin-top: 16px;
   font-size: 16px;
@@ -74,8 +79,8 @@ body {
 
 .hero {
   padding-top: 100px;
-  text-align: center;
   padding-bottom: 77px;
+  text-align: center;
   border-bottom: 1px solid #4c4c4c;
 }
 
@@ -97,7 +102,7 @@ body {
   letter-spacing: 0.18px;
   line-height: 1.4;
   margin: auto;
-  min-width: 590px;
+  max-width: 590px;
 }
 
 .flowers-slider {
@@ -119,7 +124,7 @@ body {
 .hero-cta {
   display: block;
   font-size: 19px;
-  text-align: uppercase;
+  text-transform: uppercase;
   margin-bottom: 36px;
   font-family: "Gotham Pro Light";
 }
@@ -146,7 +151,7 @@ body {
 }
 
 .reviews-slider {
-  margin-bottom: 98px;
+  margin-top: 98px;
 }
 
 .review-slide {
@@ -172,7 +177,7 @@ body {
   margin-right: 50px;
 }
 
-.review-image::before {
+.review-image:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -268,6 +273,7 @@ body {
   height: 20px;
   cursor: pointer;
 }
+
 .color-input {
   opacity: 0;
   visibility: hidden;
@@ -335,8 +341,8 @@ body {
 }
 
 .more:after {
-  display: inline-block;
   content: "";
+  display: inline-block;
   width: 10px;
   height: 4px;
   background: url("../img/caret.png") no-repeat center;
@@ -379,7 +385,6 @@ body {
 }
 
 .footer-menu-link {
-  text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
@@ -462,6 +467,10 @@ body {
   width: 100%;
   padding: 10px;
   font-size: 18px;
+}
+
+.modal {
+  max-width: 450px;
 }
 
 @media (max-width: 768px) {
